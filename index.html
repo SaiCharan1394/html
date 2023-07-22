@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* Define the counter style */
+      ol {
+        counter-reset: alphabet-counter;
+        list-style-type: none; /* Remove the default numbering */
+      }
+
+      /* Define the list item style */
+      li {
+        counter-increment: alphabet-counter;
+      }
+
+      /* Set the content of the counter as alphabets */
+      li::before {
+        content: counter(alphabet-counter, upper-alpha) ". "; /* Use "lower-alpha" for lowercase alphabets */
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="bg-primary">Hello, world!</h1>
+    <h2 class="bg-danger">h2</h2>
+    <h3 class="bg-danger">h2</h3>
+    <h4 class="bg-danger">h2</h4>
+    <h5 class="bg-danger">h2</h5>
+    <h6 class="bg-danger">h2</h6>
+    <hr />
+    <p>jdhs</p>
+    <ul class="bg-success">
+      <li>hfdkj</li>
+      <li>lkd</li>
+      <li>kld</li>
+      <li>kjds</li>
+      <li>lkjd</li>
+      <li>ldkf</li>
+    </ul>
+    <ol id="numberedList">
+      <li>kjh</li>
+      <li>kn</li>
+      <li>kjoi</li>
+      <li>jk</li>
+      <li>kl</li>
+      <li>jh</li>
+    </ol>
+
+    <table class="table table-bordered">
+      <tr style="border: 2px solid blue">
+        <th>name</th>
+        <th>age</th>
+        <th>gender</th>
+      </tr>
+      <tr>
+        <td>sai</td>
+        <td>24</td>
+        <td>male</td>
+      </tr>
+    </table>
+    <a href="" class="bg-secondary">in line</a>
+    <a
+      href="https://kopi.dev/tailwind-css-with-cdn-html/#:~:text=While%20you%20can%20download%20and,website's%20loading%20time%20and%20performance."
+      class="bg-secondary"
+      >internal</a
+    >
+    <a
+      href="https://kopi.dev/tailwind-css-with-cdn-html/#:~:text=While%20you%20can%20download%20and,website's%20loading%20time%20and%20performance."
+      target="_blank"
+      >external</a
+    >
+    <img
+      srcset="
+        https://plus.unsplash.com/premium_photo-1677087122572-dfd9f7ab2e44?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80  400w,
+        https://images.unsplash.com/photo-1682258635291-20aa5df36fe6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=685&q=80        1200w
+      "
+      src="https://plus.unsplash.com/premium_photo-1674576340752-9b9578870db3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2075&q=80"
+      alt=" Testing img"
+    />
+
+    <h1>input elements</h1>
+    <div class="container py-5 m-5">
+      <label>Number : <input class="py-2 my-2" type="number" name="name" min="1" max="10" placeholder="enter number"/> </label><br />
+      <label>text<input class="py-2 my-2" type="text" name="name" minlength="2" maxlength="4" size="50" placeholder="enter text" value="sai" > </label><br />
+      <label>date: <input class="py-2 my-2" type="date" name="name" min="2020-08-01" max="2023-08-01" /> </label><br />
+      <label>button : <input class="py-2 my-2" type="button" name="name" value="submit"  /></label
+      ><br />
+      <fieldset>
+        <legend>cheaking cheakbox</legend>
+        <div>
+          <label>checkbox01 :
+            <input class="py-2 my-2" type="checkbox" name="name" value="bananna" /> </label><br>
+        </div>
+        <div>
+          <label>checkbox02 :
+            <input class="py-2 my-2" type="checkbox" name="name1" value="bananna1" /> </label>
+        </div>  
+      </fieldset>
+      <br>
+      
+      <label> color : <input class="py-2 my-2" type="color" name="" id="" /> </label><br />
+      <label for="">date: <input class="py-2 my-2" type="date" name="" id="" /> </label><br />
+      <label for="">datetime: 
+        <input class="py-2 my-2" type="datetime-local" name="" id="">
+      </label><br>
+      <label for="">email: <input class="py-2 my-2" type="email" name="" id=""></label> <br>
+      <label for="">file: <input class="py-2 my-2" type="file" name="" id="" accept="image/jpg"></label><br>
+      <label for="">
+        hidden: <input class="py-2 my-2" type="hidden" value="saicharan">
+      </label><br>
+      <label for="">image:
+      <input class="py-2 my-2" type="image" src="https://plus.unsplash.com/premium_photo-1674576340752-9b9578870db3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2075&q=80" alt="image" height="200px" width="100px">
+      </label><br>
+      <label for="">
+        month:
+        <input class="py-2 my-2" type="month" name="" id="">
+      </label><br>
+      <label for="">password: <input class="py-2 my-2" type="password" name="" id="" maxlength="8" minlength="6" placeholder="Please enter password" size="20" required></label><br>
+      <fieldset>
+        <legend>chose the drone</legend>
+        <div><label for="">drone1<input type="radio" name="drone" ></label></div>
+        <div><label for="">drone2<input type="radio" name="drone" ></label></div>
+        <div><label for="">drone3<input type="radio" name="drone" ></label></div>
+        
+  
+
+      </fieldset>
+      <label for="">range: <input class="py-2 my-2" type="range" name="" id="" max="50" min="30" step="5"></label><br>
+      <label for="">time:
+        <input class="py-2 my-2" type="time" name="" id="">
+      </label><br>
+      <label for="">week: <input class="py-2 my-2" type="week" name="" id=""></label>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
