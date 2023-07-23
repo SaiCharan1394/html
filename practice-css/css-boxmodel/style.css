@@ -1,0 +1,20 @@
+.sai{
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+    border: 3px solid;
+    margin: 1em;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.charan{
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+    border: 3px solid;
+    margin: 1em;
+    display: inline;
+    box-sizing: content-box;
+}
