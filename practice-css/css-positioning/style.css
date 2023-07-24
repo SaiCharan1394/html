@@ -29,8 +29,10 @@ body{
     left: -50px;
 }
 .relative-1{
+    background-color: black;
     position: relative;
-    top: -100px;
+    left: 70px;
+    z-index: 1;
 }
 .fixed-1{
     position: fixed;
