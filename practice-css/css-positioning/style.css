@@ -1,0 +1,42 @@
+body{
+    height: 200vh;
+    
+}
+.container{
+    width: 100vh;
+    height: 50vh;
+    border: black solid;
+    border-width: 3px;
+    margin: 150px;
+    display: grid;
+    grid-template-rows: repeat(3,100px);
+    grid-template-columns: repeat(3,100px);
+    justify-content: center;
+    align-content: center;
+    gap: 1em;
+    position: relative;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    border-radius: 8px;
+    text-align: center;
+}
+.absolute-1{
+    position: absolute;
+    top: -50px;
+    left: -50px;
+}
+.relative-1{
+    position: relative;
+    top: -100px;
+}
+.fixed-1{
+    position: fixed;
+    bottom: 100px;
+}
+.sticky-1{
+    position: sticky;
+    top:20px;
+}
