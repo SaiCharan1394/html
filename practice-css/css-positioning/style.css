@@ -15,7 +15,7 @@ body{
     align-content: center;
     gap: 1em;
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .box{
     height: 100px;
