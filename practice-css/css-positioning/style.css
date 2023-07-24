@@ -15,7 +15,7 @@ body{
     align-content: center;
     gap: 1em;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .box{
     height: 100px;
@@ -28,6 +28,11 @@ body{
     position: absolute;
     top: -50px;
     left: -50px;
+    font-family: sans-serif ;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    color: blueviolet;
 }
 .relative-1{
     background-color: black;
